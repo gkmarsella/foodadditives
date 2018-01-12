@@ -1,0 +1,191 @@
+body {
+	background-color: #ecf0f1;
+	height: 100%;
+}
+
+footer {
+	background-color: #080000b3;
+	color: white;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	
+}
+/*Results Page*/
+
+#result-box {
+	display: flex;
+	cursor: pointer;
+}
+
+.prod-name {
+	padding: 10px;
+}
+
+.prod-name:hover {
+	background-color: #00000024;
+}
+
+/*Products Column*/
+
+#products-box {
+	height: 100vh;
+	background-color: #ff5722;
+	color: white;
+	width: 30%;
+	margin-top: 5.3%;
+	overflow: scroll;
+}
+
+#products {
+	list-style: none;
+	padding-left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+
+
+/*Ingredients Column*/
+
+#ingredient-box{
+	background-color: white;
+	height: 100vh;
+	width: 70%;
+	margin-top: 5.3%;
+}
+
+
+/*SEARCH*/
+
+.search-bar {
+	margin-top: 100px;
+	width: 250px;
+	
+}
+
+h3 {
+	text-align: center;
+	color: white;
+	margin-bottom: 100px;
+
+}
+
+#searchbar {
+	width: 70%;
+	margin-left: 15%;
+}
+
+.bardiv {
+	margin: 0 auto;
+}
+
+/*NAV*/
+.navbar-brand > img {
+	display: block;
+	height: 32px;
+	width: 34px;
+}	
+
+#nav-elements {
+	float: right;
+}
+
+#bg {
+	position: fixed; 
+	top: -50%; 
+	left: -50%; 
+	width: 200%; 
+	height: 200%;
+	z-index: -1;
+	opacity: 1.1;
+	filter: alpha(opacity=40);
+	background-color: #000;
+}
+#bg img {
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	right: 0; 
+	bottom: 0; 
+	margin: auto; 
+	min-width: 50%;
+	min-height: 50%;
+	opacity: 0.4;
+	filter: alpha(opacity=40);
+}
+
+#title {
+	color: white;
+	font-family: initial;
+}
+
+#description {
+	color: white;
+	text-align: -webkit-left;
+	font-family: initial;
+}
+
+#search-box {
+	padding-top: 8%;
+}
+
+@media screen and (max-width: 650px) {      
+    #description{      
+		color: white;
+		text-align: -webkit-left;
+		font-family: initial;
+		font-size: 18px;
+     } 
+} 
+
+
+/*Landing Page*/
+
+.login-button {
+	color: white;
+	background-color: rgba(255, 255, 255, 0);
+	border-color: white;
+	margin-top: 6%;
+	margin-right: 25px;
+    margin-top: 14px;
+    margin-left: 12px;
+}
+
+.login-button:hover {
+	background-color: rgba(26, 24, 24, 0.51);
+}
+
+.search-button {
+	color: white;
+	background-color: rgba(255, 255, 255, 0);
+	border-color: white;
+	margin-top: 6%;
+}
+
+.navbar{
+    border: none;
+    border-radius: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+#navbar-icon{
+    float: left;
+    padding: 11.5px 15px;
+    font-size: 19px;
+    height: 60px;
+} 
+
+.new-search {
+	float: left;
+}
+
+
+/*MODAL*/
+
+.login-btn{
+	background-color: #e54040;
+	font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+	color: #fff;
+}

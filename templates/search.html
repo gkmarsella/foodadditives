@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='search.css')}}">
+
+<!-- Background -->
+	<div id="bg">
+		<img src="{{url_for('static', filename='images/pile.jpg')}}">
+	</div>
+
+  <h1 id="title">Additive App</h1>
+
+	<div id="description-box">
+  		<h3 id="description">Food additives are added to products to help in preperation, preservation, add nutrients, or make the product more appealing. Some of these additives can be dangerous and should be avoided. Additive App helps you discover what additives are in the food you're eating.</h3>
+	</div>
+
+			<div class="bardiv form-group">
+				<form action="{{url_for('results')}}" method="GET" class="form-wrapper cf">
+					<input type="text" name="search-food" placeholder="Enter a food" required>
+					<button type="submit">search</button>
+				</form>
+			</div>
+
+{% endblock %}

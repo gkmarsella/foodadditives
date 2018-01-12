@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Additives in food</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+	<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="{{ url_for('static', filename='bootcss.css')}}">
+	<script src="{{url_for('static', filename='App.js') }}"></script>
+</head>
+<body>
+  <div id="bg">
+    <img src="{{url_for('static', filename='images/pile.jpg')}}">
+  </div>
+  <!-- Navbar -->
+
+<!-- 	<nav class="navbar navbar-right navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header" id="nav-elements">
+				<div class="bardiv form-group">
+				<a id="navbar-icon" class="navbar-brand" href="{{url_for('search')}}">
+					<img class="icon" src="{{url_for('static', filename='images/icon.png')}}">
+				</a>
+				<button type="button" class="login-button" data-toggle="modal" data-target="#loginModal">Log In</button>
+			</div>
+		</div>
+	</nav> -->
+
+	<div>		
+		{% block content %}
+		{% endblock %}
+	</div>
+
+	
+<!-- LOGIN MODAL -->
+	<div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" style="padding-bottom: 5%">Log in to start tracking the additives you're eating</h4>
+	      </div>
+	      <div class="modal-body" style="padding-bottom: 6%; padding-top: 6%">
+	        <form action="{{url_for('results')}}" method="GET" class="">
+				<input type="text" name="login-name" placeholder="Username" required>
+				<input type="password" name="login-password" placeholder="Password" required>
+				<button type="submit" class="login-btn">Log In!</button>
+			</form>
+	      </div>
+	      <div class="modal-footer">
+		      <form action="{{url_for('signup')}}">
+		      	<button type="submit" class="btn btn-primary" >Create an account</button>      	
+		      </form>
+
+	      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+</body>
+
+                
+<!--Footer-->
+<footer class="page-footer blue center-on-small-only">
+
+    <!--Footer Links-->
+    <div class="container-fluid">
+        <div class="row">
+
+            <!--First column-->
+            <div class="col-md-6">
+                <h5 class="title">Created by Greg Marsella</h5>
+                <p>Put github and linkedin icons here</p>
+            </div>
+            <!--/.First column-->
+
+            <!--Second column-->
+            <div class="col-md-6">
+                <ul>
+                    <li><a href="#!">About</a></li>
+                    <li><a href="#!">Contact</a></li>
+                    <li><a href="{{url_for('references')}}">References</a></li>                    
+                </ul>
+            </div>
+            <!--/.Second column-->
+        </div>
+    </div>
+    <!--/.Footer Links-->
+</footer>
+</html>
+
