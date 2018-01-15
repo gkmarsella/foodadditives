@@ -26,6 +26,10 @@ footer {
 	background-color: #00000024;
 }
 
+.selected {
+	background-color: black;
+}
+
 /*Products Column*/
 
 #products-box {

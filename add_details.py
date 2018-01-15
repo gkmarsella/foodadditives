@@ -25,7 +25,24 @@ add_details = {
         'description': 'DATEM stands for Diacetyl Tartaric Acid Esters of Monoglycerides. It can be found in processed bread products.',
         'uses': 'DATEM is used as an emulsifier or dough conditioner.',
         'toxicity': 'Animal studies have shown DATEM can cause heart fibrosis and adrenal overgrowth'
-    }
+    },
+
+    'THIAMINE MONOITRATE':{
+        'description': "Thiamine Monoitrate is the synthetic form of vitamin B1",
+        'uses': 'Thiamine Monoitrate is added to foods to increase te products micronutrients',
+        'toxicity': 'Thiamine Monoitrate is safe for consumption. Some people may experience allergic reactions'
+    },
+
+    'THIAMIN MONOITRATE':{
+        'description': "Thiamine Monoitrate is the synthetic form of vitamin B1",
+        'uses': 'Thiamine Monoitrate is added to foods to increase te products micronutrients',
+        'toxicity': 'Thiamine Monoitrate is safe for consumption. Some people may experience allergic reactions'
+    },
+
+    
+
+
+
 
 
 }

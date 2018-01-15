@@ -26,15 +26,13 @@ $(function(){
 					$('#additive-list').append('<li>'+'<a tabindex="0" data-toggle="popover" data-trigger="focus" data-html="true" title="' + key + '" data-content="' + '<strong>Description</strong>:<br>' + (addInfo[key]["description"]) + '<hr>' + '<strong>Uses</strong>:<br>' + (addInfo[key]["uses"]) + '<hr>' + '<strong>Toxicity</strong>:<br>' + (addInfo[key]["toxicity"]) + '">' + key + '</a></li>');
 					$('[data-toggle="popover"]').popover();
 				}
-
-				// allAdditives.forEach(function(i){
-				// 	$('#additive-list').append('<li>' + i + '</li>')
-				// });
-
-
-					
 			}
 		})
+	})
+
+	$('.prod-name').click(function(){
+		$('.selected').removeClass('selected');
+		$(this).addClass('selected');
 	})
 
 	 
