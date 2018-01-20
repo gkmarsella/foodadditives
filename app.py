@@ -100,6 +100,7 @@ def results():
         if checkUPC:
             product_ndbno[i['name'][:-19]] = i['ndbno']
 
+
     return render_template("results.html", search=search, product_obj=product_obj, ingredients=ingredients, product_ndbno=product_ndbno)
 
 
@@ -171,12 +172,12 @@ def additive_lookup(code):
 
 
 
-def upc_lookup(upcode):
-    response = requests.get("http://api.walmartlabs.com/v1/items?",
-        headers={
+def pic_lookup(upc):
+    response = requests.get("http://api.walmartlabs.com/v1/search?",
+        params={
             "apiKey": walmart_key,
             "format": "json",
-            "upc": upcode
+            "query": upc
         }
     )
 
