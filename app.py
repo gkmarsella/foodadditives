@@ -142,54 +142,11 @@ def ingredient_lookup(ndbno):
     search_ndbno = search_ndbno_response.json()
     return search_ndbno
 
-# def get_additives():
-#     response = requests.get("https://vx-e-additives.p.mashape.com/additives?locale=en&order=asc&sort=last_update",
-#       headers={
-#         "X-Mashape-Key": mashape_key,
-#         "Accept": "application/json"
-#       }
-#     )
-
-#     return response.json()
-
-def additive_function(code):
-    response = requests.get("https://vx-e-additives.p.mashape.com/additives/951?locale=en",
-      headers={
-        "X-Mashape-Key": mashape_key,
-        "Accept": "application/json"
-      }
-    )
-
-    return response.json()
-
-def additive_lookup(code):
-    response = requests.get('https://vx-e-additives.p.mashape.com/additives/' + code,
-        headers={
-        "X-Mashape-Key": mashape_key,
-        "Accept": "application/json"
-        }
-    )
-
-
-
 def pic_lookup(upc):
-    response = requests.get("http://api.walmartlabs.com/v1/search?",
-        params={
-            "apiKey": walmart_key,
-            "format": "json",
-            "query": upc
-        }
-    )
-
-
-
+    response = requests.get("http://api.walmartlabs.com/v1/search?query=" + upc + "&format=json&apiKey=" + walmart_key)
     return response.json()   
 
 
-@app.route('/signup')
-def signup():
-    return render_template('signup.html')
-    
 
 if os.environ.get('ENV') == 'production':
     debug = False

@@ -1,7 +1,7 @@
 add_details = {
 
-    'RED40':{
-        'description': "Red40 is a chemical compound that comes from coal tars",
+    'RED 40':{
+        'description': "Red 40 is a chemical compound that comes from coal tars",
         'uses': 'RED40 is used as a food dye',
         'toxicity': 'Can cause hyperactivity in children. Some experts suggest it can cause cancer',
         'picture': "RED40.png"
@@ -38,6 +38,7 @@ add_details = {
         'uses': 'Thiamine Monoitrate is added to foods to increase te products micronutrients',
         'toxicity': 'Thiamine Monoitrate is safe for consumption. Some people may experience allergic reactions'
     },
+
 
     
 
