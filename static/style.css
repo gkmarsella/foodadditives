@@ -34,6 +34,15 @@ footer {
 	background-color: #b91010 !important;
 }
 
+/* Navbar */
+.navbar-header {
+	width: 100%;
+}
+
+#new-search {
+
+}
+
 /*Products Column*/
 
 #products-box {
