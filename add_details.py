@@ -46,6 +46,8 @@ add_details = {
         'toxicity': 'Thiamine Monoitrate is safe for consumption. Some people may experience allergic reactions'
     },
 
+    
+
 
     
 

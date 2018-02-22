@@ -11,24 +11,22 @@
 		})
     </script>
 
-  <!-- Navbar -->
-
-	<nav class="navbar navbar-right navbar-fixed-top">
-		<div class="container-fluid">
-			<div class="navbar-header" id="nav-elements">
-				<a id="navbar-icon" class="navbar-brand" href="{{url_for('search')}}">
-					<img class="icon" src="{{url_for('static', filename='images/icon.png')}}">
-				</a>
-				<form action="{{url_for('results')}}" method="GET" class="form-wrapper cf">
-					<input id="new-search" type="text" name="search-food" placeholder="New Search" required>
-				</form>
-			</div>
-		</div>
-	</nav>
-
 <div id="result-box">
 	<!-- Product Display -->
 	<div id="products-box">
+
+		<div class="app-icon">
+			<a id="navbar-icon" href="{{url_for('search')}}">
+				<img class="icon" src="{{url_for('static', filename='images/icon.png')}}">
+			</a>
+		</div>
+
+		<div id="search-box">
+			<form action="{{url_for('results')}}" method="GET" class="form-wrapper cf">
+				<input id="new-search" type="text" name="search-food" placeholder="New Search" required>
+			</form>
+		</div>
+
 		<ul id="products">
 			{% for name in product_ndbno %}
 			<li class="prod-name" id={{product_ndbno[name]}}>
@@ -36,6 +34,14 @@
 			</li>
 			{% endfor %}
 		</ul>
+
+		<div id="foot">
+                <ul>
+                    <li><a href="#!">About</a></li>
+                    <li><a href="#!">Contact</a></li>
+                    <li><a href="{{url_for('references')}}">References</a></li>                    
+                </ul>
+        </div>
 	</div>
 
 	<!-- Ingredient Display -->
