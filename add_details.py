@@ -46,6 +46,14 @@ add_details = {
         'toxicity': 'Thiamine Monoitrate is safe for consumption. Some people may experience allergic reactions'
     },
 
+    'MALODEXTRIN': {
+        'description': "Malodextrin is a powder processed from wheat, corn, potatoes, or rice. It is similar to corn syrup, with the main difference being less sugar content",
+        'uses': 'It is used as a thickener or filler to increase the volume of processed foods',
+        'toxicity': 'Malodextrin can cause spikes in your blood sugar. It can also suppress growth of probiotics in your gut bacteria'
+    },
+
+    
+
     
 
 

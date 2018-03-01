@@ -13,6 +13,12 @@ footer {
 }
 /*Results Page*/
 
+.view {
+	display: block;
+	height: 100vh;
+	position: fixed;
+}
+
 #result-box {
 	display: flex;
 	cursor: pointer;
@@ -37,7 +43,20 @@ footer {
 /* Sidebar */
 
 #new-search {
+	width: 100%;
+	border: thick;
+	background-color: #2c2c2c;
+	height: 45px;
+}
 
+input:focus {
+	outline: none;
+}
+
+.icon {
+	width: 100px;
+    margin-top: 20%;
+    margin-bottom: 20%;
 }
 
 .app-icon {
@@ -48,10 +67,15 @@ footer {
 /*Products Column*/
 
 #products-box {
-	height: 100vh;
-	background-color: #ff5722;
+	height: 100%;
+	background-color: #202020;
 	color: white;
 	width: 30%;
+}
+
+#product-div {
+	height: 71vh;
+	overflow: auto;
 }
 
 #products {
@@ -61,7 +85,6 @@ footer {
 	flex-direction: column;
 	justify-content: space-around;
 	overflow: scroll;
-	height: 49%;
 }
 
 
